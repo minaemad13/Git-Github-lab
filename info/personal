@@ -1,3 +1,41 @@
 Name : Mina Emad 
 Gitub account :https://github.com/minaemad13
 phone : 01204822114
+
+*******************************
+lab 1 task 2 answer
+*******************************
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ mkdir info
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ touch info/personal
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git init
+Initialized empty Git repository in /media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1/.git/
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git add .
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git log
+fatal: your current branch 'master' does not have any commits yet
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ ls -a
+.  ..  .git  info
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git commit -m "first commit"
+[master (root-commit) a06d53e] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 info/personal
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git log
+commit a06d53e8e8301cadd3b720c486c97e6965e0188a (HEAD -> master)
+Author: Mina Emad <menaemadorai@gmail.com>
+Date:   Sat Jan 8 12:45:53 2022 +0200
+
+    first commit
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git remote add origin https://github.com/minaemad13/Git-Github-lab.git
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git remote -v
+origin  https://github.com/minaemad13/Git-Github-lab.git (fetch)
+origin  https://github.com/minaemad13/Git-Github-lab.git (push)
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git pull origin master
+fatal: couldn't find remote ref master
+mina@mina-Inspiron-5567:/media/mina/Old Windows/ITI/Git - GitHub/Day1/lab1$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 331 bytes | 17.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/minaemad13/Git-Github-lab.git
+ * [new branch]      master -> master
